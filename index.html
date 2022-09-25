@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Kyle Vance Portfolio</title>
 </head>
 
 <body>
     <Header class="header">
-        <a href="#aboutMe">Kyle Vance</a> 
+        <a class="logo_container" href="#aboutMe">Kyle Vance</a>
         <nav>
-            <ul class = "nav_list">
+            <ul class="nav_list">
                 <li>
                     <a href="#aboutMe" class="nav_item">About Me</a>
                 </li>
@@ -32,53 +34,72 @@
     </Header>
 
     <main class="content">
-        <section class="hero">
-            <img src="./assets/images/hero.jpg"
+        <section>
+            <div class="hero_content">
+                <h1>Building Better Websites</h1>
+                <h2>Have your website designed and developed today!</h2>
+                <div><button class="btnContactMe" type="">Contact Me!</button></div>
+            </div>
+            <img class="hero_img" src="./assets/images/hero.jpg"
                 alt="Hero Image of a laptop with a small succulent in a white vase and a pink apple smart phone resting on the laptop." />
-            <h1>Building Better Websites</h1>
-            <h2>Have your website designed and developed today!</h2>
-            <button class="btnContactMe" type="">Contact Me!</button>
         </section>
+
+
 
         <section id="aboutMe">
             <img src="./assets/images/kyle-vance.jpg" alt="a face picture of Kyle Vance" />
-            <h2>About Me</h2>
-            <p>
-                Hello Everyone!
+            <div class="about_me_content">
+                <h2>About Me</h2>
+                <p>
+                    Hello Everyone!
 
-                I’m Kyle, a passionate and highly skilled software engineer with hands-on experience developing and
-                integrating innovative features in multiple systems and applications. I'm known for managing the design,
-                development, and delivery of superior technology solutions through the creation of high-quality source
-                code. Moreover, I have a proven record of success in debugging systems and applications to address
-                critical issues. I am an excellent problem-solver with the ability to efficiently streamline processes
-                and maximize system resources. Furthermore, I am proficient at providing high-level customer service to
-                align technical support with the execution of various digital technologies. My work ethic and the
-                ability to thrive in team-based or individually motivated settings are second to none. I am also a
-                proactive self-starter, recognized for initiating improvements to increase system stability and staff
-                productivity.
-
-                My skill set includes:
-                • MERN stack
-                • MEAN stack
-                • Java / Java EE programming
-                • Agile / Scrum Development
-                • Software Development Lifecycle 
-                • Project Planning & Development
-                • Full Stack Development
-                • Clean Coding
-                • DevOps Management
-                • Testing & Troubleshooting
-                • Database Development
-
-                I am confident that my wide range of knowledge and talents will allow me to contribute to the success of
-                your company. While others take pride in meeting all standards set before them, my passion is for
-                delivering service and leadership that goes beyond organizational expectations. Connect with me today or
-                send me an email at kvance1010@protonmail.com, if you want to discuss additional details regarding my
-                work experience or skill set. I'm always interested in making new professional acquaintances!
-            </p>
+                    I’m Kyle, a passionate and highly skilled software engineer with hands-on experience developing and
+                    integrating innovative features in multiple systems and applications. I'm known for managing the
+                    design,
+                    development, and delivery of superior technology solutions through the creation of high-quality
+                    source
+                    code. Moreover, I have a proven record of success in debugging systems and applications to address
+                    critical issues. I am an excellent problem-solver with the ability to efficiently streamline
+                    processes
+                    and maximize system resources. Furthermore, I am proficient at providing high-level customer service
+                    to
+                    align technical support with the execution of various digital technologies. My work ethic and the
+                    ability to thrive in team-based or individually motivated settings are second to none. I am also a
+                    proactive self-starter, recognized for initiating improvements to increase system stability and
+                    staff
+                    productivity.
+                </p>
+                <br>
+                <h4> My skill set includes: </h4>
+                <br>
+                <ul>
+                    <li><abbr title="MongoDb Express React Node">MERN</abbr> stack</li>
+                    <li><abbr title="MongoDb Express Angular Node">MEAN</abbr> stack</li>
+                    <li>Java / Java EE programming</li>
+                    <li>Agile / Scrum Development</li>
+                    <li>Software Development Lifecycle</li>
+                    <li>Project Planning & Development</li>
+                    <li>Full Stack Development</li>
+                    <li>Clean Coding</li>
+                    <li>DevOps Management</li>
+                    <li>Testing & Troubleshooting</li>
+                    <li>Database Development</li>
+                </ul>
+                <br>
+                <p>
+                    I am confident that my wide range of knowledge and talents will allow me to contribute to the
+                    success of
+                    your company. While others take pride in meeting all standards set before them, my passion is for
+                    delivering service and leadership that goes beyond organizational expectations. Connect with me
+                    today or
+                    send me an email at kvance1010@protonmail.com, if you want to discuss additional details regarding
+                    my
+                    work experience or skill set. I'm always interested in making new professional acquaintances!
+                </p>
+            </div>
         </section>
 
-        <section id="portfolio">
+        <section id="portfolio" class="portfolio">
             <h2>
                 My Work
             </h2>
@@ -123,20 +144,21 @@
             </div>
         </section>
 
-        <section id="contactMe">
+        <section id="contactMe" class="contactMe">
             <form class="contact_box" action="#" method="post">
                 <h3>Contact Me</h3>
                 <label for="name">Name</label>
                 <input type="text" class="name" required />
                 <label for="phone" class="phone">Phone Number</label>
-                <input type="text" class="phone"/>
+                <input type="text" class="phone" />
                 <label for="email" class="email">Email</label>
-                <input type="email" class="email" required>
-                <label for="description" class="project"></label>
-                <textarea name="description" placeholder="Please give a brief description of the project and the best time to contact you."></textarea>
+                <input type="email" class="email" required />
+                <label for="description" class="project">Project</label>
+                <textarea name="description"
+                    placeholder="Please give a brief description of the project and the best time to contact you."></textarea>
                 <button type="submit">Submit</button>
             </form>
-
+            <img src="./assets/images/contact-img-sq.jpg" alt="a black and white image of a laptop" />
             <!--  <a href="www.linkedin.com/in/kyle-s-vance">LinkedIn</a>-->
             <!-- <a href="https://github.com/KVance1010">GitHub</a> -->
         </section>

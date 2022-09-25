@@ -12,7 +12,7 @@
 	box-sizing: border-box;
 }
 
-/* This is the header section */
+/* START header section */
 .header {
 	display: flex;
 	background-color: var(--header-footer-color);
@@ -20,21 +20,6 @@
 	align-items: center;
 	width: 100%;
 	padding: 3% var(--outside-padding);
-}
-
-.header a {
-	color: var(--contrast-color);
-	font-weight: bolder;
-	font-size: xx-large;
-	text-decoration: none;
-	transition: text-shadow 1s;
-}
-
-/* TODO: play with coloring to make this look more clean */
-.header a:hover {
-	text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
-    color: var(--main-background-color);
-	/* text-shadow: 1px 1px 2px var(--highlight-color); */
 }
 
 .nav_list li {
@@ -53,16 +38,130 @@
 	color: var(--second-background-color);
 }
 
-/* The Main section starts here */
-.hero img {
+.logo_container {
+	color: var(--contrast-color);
+	text-decoration: none;
+	font-size: xx-large;
+	font-weight: 900;
+	transition: text-shadow 1s;
+}
+
+/* TODO: play with coloring to make this look more clean */
+.logo_container:hover {
+	/* text-shadow: 0px 0px 50px black; */
+	text-shadow: 1px 1px 5px black, 0 0 0.1em white, 0 0 0.5em white;
+	color: var(--main-background-color);
+	color: black;
+}
+/* End header section */
+
+/* Start Main here */
+/* Start Hero Section here */
+.hero_img {
 	position: relative;
+	z-index: 1;
 	max-width: 100%;
 }
 
-#aboutMe img {
-	max-width: 250px;
-	max-height: 600px;
+.hero_content {
+	position: absolute;
+	display: flex;
+	/* height: 90%; */
+	margin: var(--outside-padding);
+	margin-left: 63.5%;
+	flex-direction: column;
+	/* justify-content: center; */
+	z-index: 2;
 }
+
+.hero_content h1 {
+	color: var(--contrast-color);
+	font-weight: bolder;
+	font-size: xxx-large;
+	margin-bottom: 10%;
+}
+.hero_content h2 {
+	color: var(--second-background-color);
+	font-weight: bolder;
+	align-self: right;
+	font-size: x-large;
+}
+.hero_content div {
+	display: flex;
+	align-items: flex-end;
+}
+
+.hero_content button {
+	display: inline;
+	align-self: right;
+	width: 30%;
+	margin-top: 10%;
+	padding: 3%;
+	border-radius: 0.5em;
+	background-color: var(--highlight-color);
+	color: var(--header-footer-color);
+	font-weight: bold;
+}
+/* End Hero Section here */
+
+/* Start About Me Section */
+#aboutMe {
+	background: var(--second-background-color);
+	display: flex;
+}
+#aboutMe img {
+	margin: var(--outside-padding);
+	max-width: 25%;
+}
+.about_me_content {
+	display: inline-block;
+	margin: var(--outside-padding);
+	color: var(--header-footer-color);
+	font-size: large;
+}
+
+.about_me_content h2 {
+	font-size: xx-large;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+/* End About Me Section */
+
+/* Start Portfolio Section */
+#portfolio {
+	background: var(--main-background-color);
+    padding: var(--outside-padding);
+    color: var(--contrast-color);
+}
+.portfolio h2 {
+	margin-bottom: var(--outside-padding);
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+/* End Portfolio Section */
+
+/* Start Contact Information */
+#contactMe{
+    background-color: var(--second-background-color);
+    padding: var(--outside-padding);
+    display:flex;
+}
+.contactMe form {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    flex-direction: column;
+    width: 100%;
+    margin-right: var(--outside-padding);
+    padding: var(--outside-padding);
+    justify-content: space-around;
+    display: flex;
+}
+
+.contactMe img {
+    max-width: 40%;
+}
+/* End Contact Information */
+/* End Main Section*/
 
 /* This is where the footer starts */
 footer {
