@@ -112,6 +112,7 @@
 #aboutMe img {
 	margin: var(--outside-padding);
 	max-width: 25%;
+    border-radius: 0.5rem;
 }
 .about_me_content {
 	display: inline-block;
@@ -130,42 +131,91 @@
 /* Start Portfolio Section */
 #portfolio {
 	background: var(--main-background-color);
-    padding: var(--outside-padding);
-    color: var(--contrast-color);
+	padding: var(--outside-padding);
+	color: var(--contrast-color);
 }
 .portfolio h2 {
 	margin-bottom: var(--outside-padding);
-    font-weight: bolder;
-    font-size: xxx-large;
+	font-weight: bolder;
+	font-size: xxx-large;
 }
 /* End Portfolio Section */
 
 /* Start Contact Information */
-#contactMe{
-    background-color: var(--second-background-color);
-    padding: var(--outside-padding);
-    display:flex;
+#contactMe {
+	background-color: var(--second-background-color);
+	padding: var(--outside-padding);
+	display: flex;
+}
+.contactMe h2 {
+	color: var(--header-footer-color);
+	font-weight: bolder;
+	font-size: xx-large;
 }
 .contactMe form {
-    border: 2px solid var(--highlight-color);
-    background-color: var(--highlight-color);
-    flex-direction: column;
-    width: 100%;
-    margin-right: var(--outside-padding);
-    padding: var(--outside-padding);
-    justify-content: space-around;
-    display: flex;
+	border: 2px solid var(--highlight-color);
+	background-color: var(--highlight-color);
+	flex-direction: column;
+	width: 100%;
+	margin-right: var(--outside-padding);
+	padding: 2%;
+	justify-content: space-around;
+	display: flex;
+	border-radius: 1rem;
+}
+
+.input_group {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+input {
+	background: var(--main-background-color);
+	border: none;
+    color:aliceblue;
+    padding: 0px 8.5%;
+    font-size: x-large;
+	border-radius: 0.5rem;
+}
+input::placeholder {
+    color:aliceblue;
+}
+
+textarea {
+	background: var(--main-background-color);
+	border: none;
+    color:aliceblue;
+    padding: 10%;
+    font-size: x-large;
+	border-radius: 0.5rem;
+}
+
+textarea::placeholder{
+    color:aliceblue;
+}
+
+.input_group label {
+	font-weight: bold;
+	font-size: large;
 }
 
 .contactMe img {
-    max-width: 40%;
+	max-width: 40%;
+	border-radius: 0.5rem;
+}
+
+.contactMe button {
+	background: var(--contrast-color);
+	color: var(--header-footer-color);
+
+	border-radius: 0.5rem;
 }
 /* End Contact Information */
 /* End Main Section*/
 
 /* This is where the footer starts */
 footer {
-	margin-top: 20px;
 	display: flex;
 	background-color: var(--header-footer-color);
 	justify-content: space-around;
