@@ -66,41 +66,38 @@
 .hero_content {
 	position: absolute;
 	display: flex;
-	/* height: 90%; */
-	margin: var(--outside-padding);
-	margin-left: 63.5%;
+	height: 90%;
+	margin-right: 20px;
 	flex-direction: column;
-	/* justify-content: center; */
+	width: 95%;
+	justify-content: center;
+	text-align: right;
 	z-index: 2;
 }
 
 .hero_content h1 {
 	color: var(--contrast-color);
 	font-weight: bolder;
-	font-size: xxx-large;
-	margin-bottom: 10%;
+	font-size: 70px;
+	/* white-space: nowrap; */
 }
 .hero_content h2 {
 	color: var(--second-background-color);
 	font-weight: bolder;
 	align-self: right;
-	font-size: x-large;
-}
-.hero_content div {
-	display: flex;
-	align-items: flex-end;
+	font-size: 50px;
+	padding-left: 60%;
+	margin: 35px 0px;
 }
 
 .hero_content button {
-	display: inline;
 	align-self: right;
-	width: 30%;
-	margin-top: 10%;
-	padding: 3%;
+	padding: 10px;
+	font-size: 30px;
 	border-radius: 0.5em;
 	background-color: var(--highlight-color);
 	color: var(--header-footer-color);
-	font-weight: bold;
+	font-weight: bolder;
 }
 /* End Hero Section here */
 
@@ -108,11 +105,12 @@
 #aboutMe {
 	background: var(--second-background-color);
 	display: flex;
+	margin-top: -2px;
 }
 #aboutMe img {
 	margin: var(--outside-padding);
 	max-width: 25%;
-    border-radius: 0.5rem;
+	border-radius: 0.5rem;
 }
 .about_me_content {
 	display: inline-block;
@@ -132,12 +130,49 @@
 #portfolio {
 	background: var(--main-background-color);
 	padding: var(--outside-padding);
-	color: var(--contrast-color);
+	color: aliceblue;
 }
 .portfolio h2 {
 	margin-bottom: var(--outside-padding);
 	font-weight: bolder;
 	font-size: xxx-large;
+}
+
+.project_1 img {
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	border-radius: 0.5rem;
+}
+
+.project_1 div {
+	position: absolute;
+	z-index: 2;
+	background-color: var(--header-footer-color);
+	margin-top: -150px;
+	padding: 30px;
+}
+.project_1 h3 {
+	font-size: 50px;
+}
+.project_1 p {
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.project_group_portfolio {
+	display: flex;
+	margin-top: 5%;
+	flex-wrap: wrap;
+	gap: 80px;
+}
+.projects {
+	width: 47%;
+}
+.projects img {
+	width: 100%;
+	border-radius: 0.5rem;
 }
 /* End Portfolio Section */
 
@@ -173,26 +208,26 @@
 input {
 	background: var(--main-background-color);
 	border: none;
-    color:aliceblue;
-    padding: 0px 8.5%;
-    font-size: x-large;
+	color: aliceblue;
+	padding: 0px 8.5%;
+	font-size: x-large;
 	border-radius: 0.5rem;
 }
 input::placeholder {
-    color:aliceblue;
+	color: aliceblue;
 }
 
 textarea {
 	background: var(--main-background-color);
 	border: none;
-    color:aliceblue;
-    padding: 10%;
-    font-size: x-large;
+	color: aliceblue;
+	padding: 10%;
+	font-size: x-large;
 	border-radius: 0.5rem;
 }
 
-textarea::placeholder{
-    color:aliceblue;
+textarea::placeholder {
+	color: aliceblue;
 }
 
 .input_group label {
@@ -208,7 +243,6 @@ textarea::placeholder{
 .contactMe button {
 	background: var(--contrast-color);
 	color: var(--header-footer-color);
-
 	border-radius: 0.5rem;
 }
 /* End Contact Information */
