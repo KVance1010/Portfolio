@@ -1,11 +1,77 @@
-:root{
-    --main-background-color: #808080;
-    --header-footer-color: #542344;
-    --contrast-color: #d9d9d9;
-    --highlight-color: #bfd1e5;
-    --second-background-color: #d8bfaa;
+:root {
+	--main-background-color: #808080;
+	--header-footer-color: #542344;
+	--contrast-color: #d9d9d9;
+	--highlight-color: #bfd1e5;
+	--second-background-color: #d8bfaa;
+	--outside-padding: 5%;
 }
 
 * {
-    font-family: 'Inter', sans-serif;;
+	font-family: 'Inter', sans-serif;
+	box-sizing: border-box;
+}
+
+/* This is the header section */
+.header {
+	display: flex;
+	background-color: var(--header-footer-color);
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 3% var(--outside-padding);
+}
+
+.header a {
+	color: var(--contrast-color);
+	font-weight: bolder;
+	font-size: xx-large;
+	text-decoration: none;
+	transition: text-shadow 1s;
+}
+
+/* TODO: play with coloring to make this look more clean */
+.header a:hover {
+	text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: var(--main-background-color);
+	/* text-shadow: 1px 1px 2px var(--highlight-color); */
+}
+
+.nav_list li {
+	display: inline;
+}
+
+.nav_item {
+	margin: 10px;
+	font-size: x-large;
+	color: var(--highlight-color);
+	text-decoration: none;
+}
+
+.nav_item:hover {
+	font-weight: bolder;
+	color: var(--second-background-color);
+}
+
+/* The Main section starts here */
+.hero img {
+	position: relative;
+	max-width: 100%;
+}
+
+#aboutMe img {
+	max-width: 250px;
+	max-height: 600px;
+}
+
+/* This is where the footer starts */
+footer {
+	margin-top: 20px;
+	display: flex;
+	background-color: var(--header-footer-color);
+	justify-content: space-around;
+	color: var(--contrast-color);
+	font-size: x-large;
+	padding: 2%;
+	width: 100%;
 }
