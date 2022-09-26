@@ -57,6 +57,17 @@
 
 /* Start Main here */
 /* Start Hero Section here */
+.hero_section {
+	display: flex;
+	height: 90%;
+	margin-right: 20px;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	text-align: right;
+	overflow: none;
+}
+
 .hero_img {
 	position: relative;
 	z-index: 1;
@@ -296,3 +307,79 @@ footer {
 	padding: 2%;
 	width: 100%;
 }
+
+@media screen and (max-width: 1228px) {
+	.hero_content {
+		height: 70%;
+	}
+
+	.hero_content h1 {
+	  font-size: 45px;
+	}
+	.hero_content h2{
+		font-size: 35px;
+	  }
+  }
+@media screen and (max-width: 962px) {
+	.hero_content {
+		height: 50%;
+	}
+
+	.hero_content h1 {
+	  font-size: 30px;
+	}
+	.hero_content h2{
+		font-size: 20px;
+	  }
+
+	  #aboutMe {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	  #aboutMe img {
+		max-width: 50%;
+		
+	}
+
+
+  }
+@media screen and (max-width: 702px) {
+	.hero_content {
+		height: 30%;
+	}
+
+	.hero_content h1 {
+	  font-size: 30px;
+	}
+	.hero_content h2{
+		font-size: 20px;
+	  }
+	  .hero_content button {
+		align-self: right;
+		padding: 10px;
+		font-size: 20px;
+		border-radius: 0.5em;
+		background-color: var(--highlight-color);
+		color: var(--header-footer-color);
+		font-weight: bolder;
+	}
+  }
+@media screen and (max-width: 504px) {
+	.hero_content h1 {
+		font-size: 25px;
+	  }
+	.hero_content h2{
+		font-size: 16px;
+	  }
+	  .hero_content button {
+		align-self: right;
+		padding: 8px;
+		font-size: 12px;
+		border-radius: 0.5em;
+		background-color: var(--highlight-color);
+		color: var(--header-footer-color);
+		font-weight: bolder;
+	}
+  }
+
