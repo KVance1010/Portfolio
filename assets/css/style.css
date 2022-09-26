@@ -112,8 +112,8 @@
 }
 .hero_content button:hover,
 .hero_content button:focus {
-  box-shadow: 2px 2px 2px 2px var(--main-background-color);
-  transform: translateY(-0.25em);
+	box-shadow: 2px 2px 2px 2px var(--main-background-color);
+	transform: translateY(-0.25em);
 }
 /* End Hero Section here */
 
@@ -170,7 +170,7 @@
 	background-color: var(--header-footer-color);
 	margin-top: -150px;
 	padding: 30px;
-    border-radius: 0px 0.5rem 0px 0.5rem;
+	border-radius: 0px 0.5rem 0px 0.5rem;
 }
 .project_1 h3 {
 	font-size: 50px;
@@ -199,20 +199,20 @@
 }
 
 .projects div {
-    position: absolute;
+	position: absolute;
 	z-index: 2;
 	background-color: var(--header-footer-color);
 	margin-top: -116px;
 	padding: 30px;
-    border-radius: 0px 0.5rem 0px 0.5rem;
+	border-radius: 0px 0.5rem 0px 0.5rem;
 }
 
-.projects h3{
-    font-size: 25px;
+.projects h3 {
+	font-size: 25px;
 }
 .projects p {
-    margin-top: 10px;
-    font-size: 20px;
+	margin-top: 10px;
+	font-size: 20px;
 }
 /* End Portfolio Section */
 
@@ -254,15 +254,14 @@ input {
 }
 input::placeholder {
 	color: aliceblue;
-    font-size: 30px;
+	font-size: 30px;
 }
 
 textarea {
 	background: var(--main-background-color);
 	border: none;
 	color: aliceblue;
-	/* padding: 10%; */
-    padding: 16px 178px 100px 5px;
+	padding: 16px 178px 100px 5px;
 	font-size: 30px;
 	border-radius: 0.5rem;
 }
@@ -285,13 +284,13 @@ textarea::placeholder {
 	background: var(--contrast-color);
 	color: var(--header-footer-color);
 	border-radius: 0.5rem;
-    font-size: 30px;
+	font-size: 30px;
 	width: 30%;
 }
 
 .contactMe button:hover,
 .contactMe button:focus {
-  background-color: var(--header-footer-color);
+	background-color: var(--header-footer-color);
 	color: var(--contrast-color);
 }
 /* End Contact Information */
@@ -308,54 +307,133 @@ footer {
 	width: 100%;
 }
 
-@media screen and (max-width: 1228px) {
-	.hero_content {
-		height: 70%;
-	}
-
-	.hero_content h1 {
-	  font-size: 45px;
-	}
-	.hero_content h2{
-		font-size: 35px;
-	  }
-  }
-@media screen and (max-width: 962px) {
-	.hero_content {
-		height: 50%;
-	}
-
-	.hero_content h1 {
-	  font-size: 30px;
-	}
-	.hero_content h2{
-		font-size: 20px;
-	  }
-
-	  #aboutMe {
-		flex-wrap: wrap;
+@media screen and (max-width: 1466px) {
+	/* portfolio section  */
+	.project_group_portfolio {
 		justify-content: center;
 	}
 
-	  #aboutMe img {
-		max-width: 50%;
-		
+	/* Contact Me section */
+	input {
+		padding: 10px 90px 2px 2px;
+		font-size: 20px;
+	}
+	input::placeholder {
+		font-size: 20px;
+	}
+	.input_group label {
+		font-size: 20px;
+	}
+	textarea {
+		padding: 16px 100px 60px 5px;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1234px) {
+	/* Hero Section */
+	.hero_content {
+		height: 70%;
+	}
+	.hero_content h1 {
+		font-size: 45px;
+	}
+	.hero_content h2 {
+		font-size: 35px;
 	}
 
+	/*Contact Me section  */
+	.contactMe h2 {
+		font-size: 40px;
+	}
+	.input_group {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+}
 
-  }
+@media screen and (max-width: 1048px) {
+	/* Contact Me Section */
+	input {
+		padding: 5px 60px 2px 2px;
+		font-size: 16px;
+	}
+	input::placeholder {
+		font-size: 16px;
+	}
+	.input_group label {
+		font-size: 16px;
+	}
+	textarea {
+		padding: 9px 70px 40px 5px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 968px) {
+	/* Hero Section */
+	.hero_content {
+		height: 50%;
+	}
+	.hero_content h1 {
+		font-size: 30px;
+	}
+	.hero_content h2 {
+		font-size: 20px;
+	}
+	/* About Me Section */
+	#aboutMe {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#aboutMe img {
+		max-width: 50%;
+	}
+
+	/* Contact Me Section  */
+	.contactMe {
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+	}
+	.contact_box {
+		order: 2;
+	}
+	.contactMe img {
+		order: 1;
+		width: 50%;
+	}
+	input {
+		margin: 5px;
+		padding: 5px 60px 2px 2px;
+		font-size: 16px;
+	}
+	input::placeholder {
+		font-size: 16px;
+	}
+	.input_group label {
+		font-size: 16px;
+	}
+	textarea {
+		padding: 9px 70px 40px 5px;
+		font-size: 16px;
+	}
+}
+
 @media screen and (max-width: 702px) {
+	/* Hero Section */
 	.hero_content {
 		height: 30%;
 	}
 
 	.hero_content h1 {
-	  font-size: 30px;
+		font-size: 30px;
 	}
-	.hero_content h2{
+	.hero_content h2 {
 		font-size: 20px;
-	  }
-	  .hero_content button {
+	}
+	.hero_content button {
 		align-self: right;
 		padding: 10px;
 		font-size: 20px;
@@ -364,22 +442,77 @@ footer {
 		color: var(--header-footer-color);
 		font-weight: bolder;
 	}
-  }
+	/* footer Section */
+	footer {
+		font-size: large;
+	}
+}
+
 @media screen and (max-width: 504px) {
+	/* Header Section */
+	.nav_item {
+		font-size: 12px;
+		margin: 0px;
+	}
+	
+	/* Hero Section */
 	.hero_content h1 {
 		font-size: 25px;
-	  }
-	.hero_content h2{
+	}
+	.hero_content h2 {
 		font-size: 16px;
-	  }
-	  .hero_content button {
-		align-self: right;
+	}
+	.hero_content button {
 		padding: 8px;
 		font-size: 12px;
-		border-radius: 0.5em;
-		background-color: var(--highlight-color);
-		color: var(--header-footer-color);
-		font-weight: bolder;
 	}
-  }
+	/* Footer section */
+	footer {
+		font-size: small;
+	}
+}
 
+@media screen and (max-width: 390px) {
+	/* Header Section */
+	.nav_list li {
+		display: flex;
+	}
+	.nav_item {
+		margin-bottom: 3px;
+		font-size: 16px;
+	}
+	/* Hero Section */
+	.hero_content h2 {
+		margin: 10px 0px;
+	}
+	/* Contact Me Section  */
+	.contactMe {
+		gap: 10px;
+	}
+	.contactMe h2 {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.contactMe img {
+		width: 75%;
+	}
+	input {
+		margin: 5px;
+		padding: 5px 40px 2px 2px;
+		font-size: 16px;
+	}
+	input::placeholder {
+		font-size: 16px;
+	}
+	.input_group label {
+		font-size: 16px;
+	}
+	textarea {
+		padding: 9px 20px 20px 5px;
+		font-size: 16px;
+	}
+	.contactMe button {
+		font-size: 20px;
+		width: 30%;
+	}
+}
