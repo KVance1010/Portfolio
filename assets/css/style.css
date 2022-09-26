@@ -99,6 +99,11 @@
 	color: var(--header-footer-color);
 	font-weight: bolder;
 }
+.hero_content button:hover,
+.hero_content button:focus {
+  box-shadow: 2px 2px 2px 2px var(--main-background-color);
+  transform: translateY(-0.25em);
+}
 /* End Hero Section here */
 
 /* Start About Me Section */
@@ -270,6 +275,13 @@ textarea::placeholder {
 	color: var(--header-footer-color);
 	border-radius: 0.5rem;
     font-size: 30px;
+	width: 30%;
+}
+
+.contactMe button:hover,
+.contactMe button:focus {
+  background-color: var(--header-footer-color);
+	color: var(--contrast-color);
 }
 /* End Contact Information */
 /* End Main Section*/
