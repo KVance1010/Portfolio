@@ -145,6 +145,13 @@
 	padding: var(--outside-padding);
 	color: aliceblue;
 }
+.portfolio img {
+opacity: .7;
+}
+.portfolio img:hover {
+opacity: 1;
+}
+
 .main_project {
 	display: flex;
 	width: 100%;
