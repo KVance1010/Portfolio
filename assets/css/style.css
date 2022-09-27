@@ -145,18 +145,22 @@
 	padding: var(--outside-padding);
 	color: aliceblue;
 }
-
-/* Main Project */
+.main_project {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
 .portfolio h2 {
 	margin-bottom: var(--outside-padding);
 	font-weight: bolder;
 	font-size: xxx-large;
 }
 
+/* Main Project */
 .project_1 img {
 	display: block;
 	position: relative;
-	width: 70%;
+	width: 100%;
 	z-index: 1;
 	border-radius: 0.5rem;
 }
@@ -388,6 +392,32 @@ footer {
 		max-width: 50%;
 	}
 
+	/* Portfolio Section */
+	.project_1 div {
+		margin-top: -20%;
+		padding: 30px;
+	}
+	.project_1 h3 {
+		font-size: 50px;
+	}
+	.project_1 p {
+		margin-top: 10px;
+		font-size: 30px;
+	}
+
+	/* smaller projects */
+	.projects div {
+		margin-top: -10%;
+		padding: 10px;
+	}
+
+	.projects h3 {
+		font-size: 16px;
+	}
+	.projects p {
+		margin-top: 10px;
+		font-size: 12px;
+	}
 	/* Contact Me Section  */
 	.contactMe {
 		flex-wrap: wrap;
@@ -418,7 +448,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 702px) {
+@media screen and (max-width: 744px) {
 	/* Hero Section */
 	.hero_content {
 		height: 30%;
@@ -439,6 +469,24 @@ footer {
 		color: var(--header-footer-color);
 		font-weight: bolder;
 	}
+	/* Portfolio Section */
+	.project_1 div {
+		margin-top: -20%;
+		padding: 20px;
+	}
+	.project_1 h3 {
+		font-size: 40px;
+	}
+	.project_1 p {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	/* smaller projects */
+	.projects div {
+		margin-top: -15%;
+	}
+
 	/* footer Section */
 	footer {
 		font-size: large;
@@ -451,7 +499,7 @@ footer {
 		font-size: 12px;
 		margin: 0px;
 	}
-	
+
 	/* Hero Section */
 	.hero_content h1 {
 		font-size: 25px;
@@ -462,6 +510,32 @@ footer {
 	.hero_content button {
 		padding: 8px;
 		font-size: 12px;
+	}
+
+	/* Portfolio Section */
+	.project_1 div {
+		margin-top: -20%;
+		padding: 15px;
+	}
+	.project_1 h3 {
+		font-size: 25px;
+	}
+	.project_1 p {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+	/* smaller projects */
+	.projects div {
+		margin-top: -10%;
+		padding: 5px;
+	}
+
+	.projects h3 {
+		font-size: 12px;
+	}
+	.projects p {
+		margin-top: 6px;
+		font-size: 8px;
 	}
 	/* Footer section */
 	footer {
