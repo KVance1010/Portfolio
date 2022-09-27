@@ -12,7 +12,7 @@
 	box-sizing: border-box;
 }
 
-/* START header section */
+/* Start header section */
 .header {
 	display: flex;
 	background-color: var(--header-footer-color);
@@ -46,9 +46,7 @@
 	transition: text-shadow 1s;
 }
 
-/* TODO: play with coloring to make this look more clean */
 .logo_container:hover {
-	/* text-shadow: 0px 0px 50px black; */
 	text-shadow: 1px 1px 5px black, 0 0 0.1em white, 0 0 0.5em white;
 	color: var(--main-background-color);
 	color: black;
@@ -90,7 +88,6 @@
 	color: var(--contrast-color);
 	font-weight: bolder;
 	font-size: 70px;
-	/* white-space: nowrap; */
 }
 .hero_content h2 {
 	color: var(--second-background-color);
@@ -159,7 +156,7 @@
 .project_1 img {
 	display: block;
 	position: relative;
-	width: 100%;
+	width: 70%;
 	z-index: 1;
 	border-radius: 0.5rem;
 }
